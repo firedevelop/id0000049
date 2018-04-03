@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  var countries = ["Spain","France","UK","Congo","USA"];
+
+  </script>
+
+</head>
+<body>
+  <script>
+document.write("<br>Length-1: " + countries[countries.length-1]+"<br>");
+
+document.write("<br><b>PUSH:</b>")
+countries.push("Canada","Chile","Argentina");
+var arrayLength = countries.length;
+for(var i=0; i<arrayLength; i++){
+  document.write("<br>" + [i+1] + " " + countries[i]);
+}
+
+document.write("<br><br><b>UNSHIFT:</b>");
+countries.unshift("Moroco","Zambia");
+var arrayLength = countries.length;
+for(var i=0; i<arrayLength; i++){
+  document.write("<br>" + [i+1] + " " +  countries[i]);
+}
+
+document.write("<br><br><b>POP:</b>")
+countries.pop();
+var arrayLength = countries.length;
+for(var i=0; i<arrayLength; i++){
+  document.write("<br>" + [i+1] + " " + countries[i]);
+}
+
+document.write("<br><br><b>SHIFT:</b>")
+countries.shift();
+var arrayLength = countries.length;
+for(var i=0; i<arrayLength; i++){
+  document.write("<br>" + [i+1] + " " + countries[i]);
+}
+  </script>
+</body>
+</html>
